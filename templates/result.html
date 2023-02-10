@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+	<form class="form-signin" method=post enctype=multipart/form-data>
+		{% if name == "healthy"%}
+			<h1 class="h1 mb-3 font-weight-normal"> Your plant is healthy! </h1>
+		{% else %}
+			<h1 class="h1 mb-3 font-weight-normal"> Your leaf got a {{ name }} disease!</h5>
+			<h3 class="h5 mb-3 font-weight-normal"> {{ description }} </p> 
+		{% endif %}
+		
+	</form>
+{% endblock %}
